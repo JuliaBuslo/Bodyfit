@@ -1,0 +1,127 @@
+.wr-shedule {
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 105px;
+}
+.wr-shedule .container {
+    max-width: 100%;
+    padding-left: 175px;
+    padding-right: 175px;
+    background-color: #12283e;
+}
+.shedule-slider {
+    img {
+    width: 390px;
+    height: 460px;
+    object-fit: cover;
+    }
+}
+.slide-border-green {
+    position: relative;
+    &::after {
+        content: '';
+        background-color: #a0ce4e;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+    }
+}
+.slide-border-blue {
+    position: relative;
+    &::after {
+        content: '';
+        background-color: #014f93;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+    }
+}
+.slide-border-red {
+    position: relative;
+    &::after {
+        content: '';
+        background-color: #f34a4a;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+    }
+}
+.slide-border-yellow {
+    position: relative;
+    &::after {
+        content: '';
+        background-color: #d1e94a;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+    }
+}
+.shedule-slider {
+    .slick-next {
+        &::before {
+        content: url(../media/shedule-arrow-right.png);
+        width: 21px;
+        height: 25px;
+        margin-left: 15px;
+         }
+    }
+    .slick-prev {
+        &::before {
+            content: url(../media/shedule-arrow-left.png);
+            width: 21px;
+            height: 25px;
+            margin-left: -25px;
+        }
+    }
+}
+.shedule-hidden {
+    position: absolute;
+    display: none;
+    left: 40px;
+    bottom: 60px;
+    p {
+        &:first-child {
+            font-family: "OpenSansB";
+            font-size: 20px;
+        }
+        &:last-child {
+            font-family: "OpenSans";
+            font-size: 14px;
+        }  
+    }
+}
+.shedule-hidden-different {
+     p {
+        color: #3a3b3c;
+     }
+}
+.slide-border-green, 
+.slide-border-yellow {
+        &:hover {
+            background-color: #12283e;
+            opacity: 0.66;
+            cursor: pointer;
+            .shedule-hidden {
+                display: block; 
+        }
+    }
+}
+.slide-border-blue, 
+.slide-border-red {
+    &:hover {
+        background-color: #000;
+        opacity: 0.66;
+        cursor: pointer;
+        .shedule-hidden {
+            display: block;
+        }
+    }
+}

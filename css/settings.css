@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "OpenSans";
+src: url("../fonts/OpenSansR.otf") format("opentype"),
+url("../fonts/OpenSansR.woff") format("woff"),
+url("../fonts/OpenSansR.ttf") format("truetype");  
+}
+@font-face {
+    font-family: "Renfrew";
+src: url("../fonts/Renfrew.otf") format("opentype"),
+url("../fonts/Renfrew.woff") format("woff"),
+url("../fonts/Renfrew.ttf") format("truetype");  
+}
+body {
+    background-color: #fff;
+    font-family: "OpenSans";
+    font-size: 16px;
+    color: #fff;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
