@@ -1,6 +1,56 @@
 .wr-responsive {
     background-color: #fff;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    position: relative;
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 }
-.wr-responsive .container {
-    
+.digital {
+    display: flex;
+    justify-content: center;
+    img {
+        position: absolute;
+    }
 }
+.iphone {
+    top: 76px;
+    right: 290px;
+}
+.responsive-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 400px;
+    p {
+        font-family: "OpenSans";
+        font-size: 20px;
+        color: #404040;
+        max-width: 760px;
+        text-align: center;
+        position: relative;
+    &:first-child {
+        font-family: "OpenSansB";
+        font-size: 30px;
+        color: #12283e;
+        }
+    &:last-child {
+            font-family: "OpenSansL";
+            font-size: 14px;
+            color: #797979;
+            max-width: 490px;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -45px;
+            height: 5px;
+            width: 480px;
+            background-image: linear-gradient(to right, #a0ce4e 30%, #014f93 30% 60%, #f34a4a 60% 90%, #00bff3 10%);
+            }
+        }
+    }
+}    
