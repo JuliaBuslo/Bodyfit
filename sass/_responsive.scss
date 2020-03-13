@@ -1,6 +1,6 @@
 .wr-responsive {
     background-color: #fff;
-    padding-top: 140px;
+    padding-top: 181px;
     padding-bottom: 150px;
     position: relative;
     .container {
@@ -68,6 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 46px;
     &::after {
         content: '';
         position: absolute;
@@ -97,7 +98,8 @@
             font-size: 14px;
             color: #797979;
             max-width: 490px;
-            line-height: 1.8;
+            line-height: 1.4;
+            margin-top: 3px;
         }
     }
 }    
