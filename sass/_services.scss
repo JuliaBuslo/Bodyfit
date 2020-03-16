@@ -1,13 +1,13 @@
 .wr-services {
     background-color: #fff;
-    padding-top: 100px;
-    padding-bottom: 130px;
+    padding-top: 103px;
+    padding-bottom: 149px;
 }
 .services-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
-    grid-template-rows: repeat(2, 240px) 24px;
+    row-gap: 37px;
+    grid-template-rows: repeat(2, 230px) auto;
     justify-items: center;
     align-items: center;
 }
@@ -15,7 +15,8 @@
     font-family: "OpenSansB";
     font-size: 20px;
     text-align: center;
-    margin: 16px 0;
+    margin-top: 20px;
+    margin-bottom: 11px;
 }
 %serv-paragraph-style {
     font-family: "OpenSansL";
@@ -118,6 +119,5 @@
         color: #a0ce4e;
     }    
     }
-
 }
 

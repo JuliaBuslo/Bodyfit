@@ -12,6 +12,24 @@ if(header) {
   }
 }
 
+// mobile menu 
+let menuMobileBtn = document.querySelector('.menu-mobile-btn');
+let menuLines = document.querySelector('.line-menu');
+let menuMobBox = document.querySelector('.menu-box');
+let menuItem = document.querySelectorAll('.menu-item');
+
+menuMobileBtn.addEventListener('click', function(){
+  menuMobileBtn.classList.toggle("open");  
+  menuMobBox.classList.toggle("menu-active");
+});
+
+menuItem.forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    menuMobBox.classList.remove("menu-active");
+  });
+});
+
+
 // slik shedule 
 $(document).ready(function(){
     $('.shedule-slider').slick({
