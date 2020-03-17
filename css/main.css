@@ -402,6 +402,7 @@ header {
   z-index: 50;
   background-color: rgba(0, 0, 0, 0.31);
   border-bottom: 4px solid #a0ce4e;
+  height: 55px;
 }
 
 .menu-mobile {
@@ -728,12 +729,59 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 37px;
-  grid-template-rows: repeat(2, 230px) auto;
+  grid-template-rows: repeat(2, auto);
   justify-items: center;
   align-items: center;
 }
 
-.serv-focus h4, .serv-icons h4 {
+.serv-icons-fitness {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.serv-image-fitness {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.serv-ellipse-fitness {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.serv-icons-diet {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.serv-image-diet {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.serv-ellipse-diet {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.serv-icons-habbits {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.serv-image-habbits {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.serv-ellipse-habbits {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.serv-icons-fitness h4,
+.serv-icons-diet h4,
+.serv-icons-habbits h4 {
   font-family: "OpenSansB";
   font-size: 20px;
   text-align: center;
@@ -741,7 +789,9 @@ nav a:hover {
   margin-bottom: 11px;
 }
 
-.serv-focus p, .serv-icons p {
+.serv-icons-fitness p,
+.serv-icons-diet p,
+.serv-icons-habbits p {
   font-family: "OpenSansL";
   font-size: 14px;
   line-height: 1.29;
@@ -752,70 +802,103 @@ nav a:hover {
   margin: 5px 0;
 }
 
-.serv-icons {
+.serv-image-fitness {
+  transform: skewX(6deg) skewY(-3deg) rotate(2deg);
+  object-fit: none;
+}
+.serv-image-fitness img {
+  object-fit: none;
+}
+
+.serv-image-diet {
+  transform: skew(1deg, 2deg);
+}
+
+.serv-image-habbits {
+  transform: skew(-5deg, -2deg);
+}
+
+.serv-icons-fitness,
+.serv-icons-diet,
+.serv-icons-habbits {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.serv-icons h4 {
+.serv-icons-fitness h4,
+.serv-icons-diet h4,
+.serv-icons-habbits h4 {
   color: #12283e;
 }
-.serv-icons p {
+.serv-icons-fitness p,
+.serv-icons-diet p,
+.serv-icons-habbits p {
   color: rgba(18, 40, 62, 0.68);
 }
-
-.serv-focus h4 {
+.serv-icons-fitness:hover h4,
+.serv-icons-diet:hover h4,
+.serv-icons-habbits:hover h4 {
   color: #a0ce4e;
 }
-.serv-focus p {
-  color: #12283e;
+.serv-icons-fitness:hover::after,
+.serv-icons-diet:hover::after,
+.serv-icons-habbits:hover::after {
+  content: "";
+  background-color: #000;
+  opacity: 0.1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.serv-image .image-color3, .serv-image .image-color2, .serv-image .image-color {
+.serv-image-fitness .image-color3,
+.serv-image-diet .image-color3,
+.serv-image-habbits .image-color3, .serv-image-fitness .image-color2,
+.serv-image-diet .image-color2,
+.serv-image-habbits .image-color2, .serv-image-fitness .image-color,
+.serv-image-diet .image-color,
+.serv-image-habbits .image-color {
   position: absolute;
   bottom: 3px;
   width: 100%;
   height: 99%;
 }
 
-.serv-image {
+.serv-image-fitness,
+.serv-image-diet,
+.serv-image-habbits {
   position: relative;
 }
-.serv-image img {
+.serv-image-fitness img,
+.serv-image-diet img,
+.serv-image-habbits img {
   width: 350px;
   height: 230px;
   border-radius: 3px;
   box-sizing: border-box;
   object-position: top;
 }
-.serv-image .image-color {
+.serv-image-fitness .image-color,
+.serv-image-diet .image-color,
+.serv-image-habbits .image-color {
   background-color: rgba(18, 40, 62, 0.49);
-  transform: skewX(6deg) skewY(-3deg) rotate(2deg);
 }
-.serv-image .image-color2 {
+.serv-image-fitness .image-color2,
+.serv-image-diet .image-color2,
+.serv-image-habbits .image-color2 {
   background-color: rgba(18, 40, 62, 0.41);
-  transform: skew(1deg, 2deg);
 }
-.serv-image .image-color3 {
+.serv-image-fitness .image-color3,
+.serv-image-diet .image-color3,
+.serv-image-habbits .image-color3 {
   background-color: rgba(18, 40, 62, 0.41);
-  transform: skew(-5deg, -2deg);
 }
 
-.serv-image-transfotm1 {
-  transform: skewX(6deg) skewY(-3deg) rotate(2deg);
-  object-fit: none;
-}
-
-.serv-image-transfotm2 {
-  transform: skew(1deg, 2deg);
-}
-
-.serv-image-transfotm3 {
-  transform: skew(-5deg, -2deg);
-}
-
-.serv-ellipse {
+.serv-ellipse-fitness,
+.serv-ellipse-diet,
+.serv-ellipse-habbits {
   text-align: center;
   width: 20px;
   height: 20px;
@@ -964,7 +1047,7 @@ nav a:hover {
 .wr-responsive {
   background-color: #fff;
   padding-top: 181px;
-  padding-bottom: 150px;
+  padding-bottom: 198px;
   position: relative;
 }
 .wr-responsive .container {
@@ -973,70 +1056,19 @@ nav a:hover {
   position: relative;
 }
 
-.comp {
+.digital {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
-.comp img:last-child {
-  width: 631px;
-  height: 39px;
-  object-fit: cover;
-  object-position: bottom;
-  transform: scaleY(-1);
-  opacity: 0.05;
-}
-
-.shadow {
-  width: 611px;
-  height: 27px;
-  margin-top: -14px;
-  margin-bottom: -10px;
-}
-
-.iphone {
-  position: absolute;
-}
-
-.iphoneG {
-  top: 76px;
-  right: 230px;
-  transition: transform 2s;
-}
-.iphoneG:hover {
-  transform: scale(2) skew(-20deg, 20deg);
-  z-index: 5;
-}
-
-.iphoneW {
-  top: 76px;
-  right: 270px;
-  transition: transform 3s;
-}
-.iphoneW:hover {
-  transform: scale(2) rotate(-25deg);
-  top: 60px;
-  right: 280px;
-  z-index: 5;
-}
-
-.iphoneB {
-  top: 76px;
-  right: 315px;
-  transition: transform 4s;
-}
-.iphoneB:hover {
-  transform: translate(-150px) scale(2);
-  z-index: 5;
-}
 
 .responsive-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 46px;
+  margin-top: 21px;
 }
 .responsive-text::after {
   content: "";
@@ -1047,7 +1079,14 @@ nav a:hover {
   width: 480px;
   background-image: linear-gradient(to right, #a0ce4e 30%, #014f93 30% 60%, #f34a4a 60% 90%, #00bff3 10%);
 }
-.responsive-text p {
+.responsive-text h4 {
+  font-family: "OpenSansB";
+  font-size: 30px;
+  color: #12283e;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+.responsive-text p:first-of-type {
   font-family: "OpenSans";
   font-size: 20px;
   color: #404040;
@@ -1057,19 +1096,14 @@ nav a:hover {
   line-height: 2;
   margin: 0;
 }
-.responsive-text p:first-child {
-  font-family: "OpenSansB";
-  font-size: 30px;
-  color: #12283e;
-  line-height: 1.2;
-}
-.responsive-text p:last-child {
+.responsive-text p:last-of-type {
   font-family: "OpenSansL";
   font-size: 14px;
   color: #797979;
   max-width: 490px;
   line-height: 1.4;
-  margin-top: 3px;
+  margin-top: 4px;
+  text-align: center;
 }
 
 .wr-class {
@@ -1079,6 +1113,7 @@ nav a:hover {
   background-position: top;
   padding-top: 136px;
   padding-bottom: 80px;
+  position: relative;
 }
 
 .wr-class .container {
@@ -1086,17 +1121,29 @@ nav a:hover {
 }
 
 .class-body-text {
-  display: inline-flex;
-  align-items: center;
   width: 123px;
   height: 123px;
-  border-radius: 50%;
+  color: #000;
   position: absolute;
-  background: linear-gradient(to top, #afc6cc, #06335c);
-  padding: 5px;
-  box-sizing: border-box;
-  top: 38%;
-  right: 46%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50px, -50px);
+  left: 50%;
+  background-image: linear-gradient(to top, #afc6cc, #06335c);
+}
+.class-body-text::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: #fff;
 }
 .class-body-text p {
   font-family: "OpenSansB";
@@ -1110,7 +1157,7 @@ nav a:hover {
 
 .class-body-text2 {
   background-color: #fff;
-  padding: 14.1px;
+  padding: 14px;
   border-radius: 50%;
   text-align: center;
   box-sizing: border-box;
@@ -1180,6 +1227,113 @@ nav a:hover {
   .menu-mobile {
     display: block;
   }
+
+  .logo {
+    position: absolute;
+    top: 14px;
+  }
+
+  .menu-mobile-btn {
+    top: 20px;
+  }
+}
+.wr-statistics {
+  background-color: #f5f5f5;
+  padding-top: 150px;
+  padding-bottom: 190px;
+}
+
+.showcase {
+  height: 460px;
+  background-color: #fff;
+  box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.16);
+  border: 1px solid #e2e2e2;
+}
+.showcase button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.showcase p {
+  font-family: "OpenSans";
+  font-size: 14px;
+  color: #737373;
+  line-height: 1.71;
+  margin-top: 20px;
+  margin-left: 25px;
+  max-width: 225px;
+  height: 50px;
+}
+.showcase a:last-of-type {
+  font-family: "OpenSansB";
+  font-size: 14px;
+  background-color: #1f4b6e;
+  width: 136px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 56px;
+}
+
+.showcase-slider a:hover {
+  background-color: #637180;
+  opacity: 0.66;
+}
+.showcase-slider img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+}
+.showcase-slider img::after {
+  content: counter("QUICK VIEW");
+}
+.showcase-slider .slick-next:before {
+  content: url(../media/statistics-arrow-right.png);
+  margin-left: 15px;
+}
+.showcase-slider .slick-prev:before {
+  content: url(../media/statistics-arrow-left.png);
+  margin-left: -15px;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 214px;
+}
+.statistics a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: #a0ce4e;
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  box-shadow: 1.6px 2.6px 5px 0 rgba(0, 0, 0, 0.14);
+}
+.statistics a p {
+  max-width: 86px;
+  text-align: center;
+  font-family: "OpenSansB";
+  font-size: 20px;
+}
+.statistics a i {
+  padding-top: 15px;
+  font-size: 35px;
+}
+.statistics a:hover {
+  background-color: #1f4b6e;
+  border: 5px solid #a0ce4e;
+  border-top-left-radius: 27px 27px;
+  border-top-width: 10px;
+  border-left-width: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -25,15 +25,24 @@ menuMobileBtn.addEventListener('click', function(){
 
 menuItem.forEach(function(btn) {
   btn.addEventListener('click', function() {
+    menuMobileBtn.classList.remove("open");
     menuMobBox.classList.remove("menu-active");
   });
 });
 
 
-// slik shedule 
+// slick shedule 
 $(document).ready(function(){
     $('.shedule-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1
+    });
+  });
+
+  // slick statistics
+  $(document).ready(function(){
+    $('.showcase-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 2
     });
   });

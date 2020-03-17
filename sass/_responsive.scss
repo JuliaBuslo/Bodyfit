@@ -1,7 +1,7 @@
 .wr-responsive {
     background-color: #fff;
     padding-top: 181px;
-    padding-bottom: 150px;
+    padding-bottom: 198px;
     position: relative;
     .container {
         display: flex;
@@ -9,66 +9,18 @@
         position: relative;
     }
 }
-.comp {
+.digital {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     position: relative;
-    img {
-        &:last-child {
-            width: 631px;
-            height: 39px;
-            object-fit: cover;
-            object-position: bottom;
-            transform: scaleY(-1);
-            opacity: 0.05;
-        }
-    }
-} 
-.shadow {
-    width: 611px;
-    height: 27px;
-    margin-top: -14px;
-    margin-bottom: -10px;
-    }
-.iphone {
-    position: absolute;
-}
-.iphoneG {
-    top: 76px;
-    right: 230px;
-    transition: transform 2s;
-    &:hover {
-        transform: scale(2.0) skew(-20deg, 20deg);
-        z-index: 5;
-    }
-}
-.iphoneW {
-    top: 76px;
-    right: 270px;
-    transition: transform 3s;
-    &:hover {
-        transform: scale(2.0) rotate(-25deg);
-        top: 60px;
-        right: 280px;
-        z-index: 5;
-    }
-}
-.iphoneB {
-    top: 76px;
-    right: 315px;
-    transition: transform 4s;
-    &:hover {
-        transform: translate(-150px) scale(2.0);
-        z-index: 5;
-    }
 }
 .responsive-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 46px;
+    margin-top: 21px;
     &::after {
         content: '';
         position: absolute;
@@ -78,28 +30,32 @@
         width: 480px;
         background-image: linear-gradient(to right, #a0ce4e 30%, #014f93 30% 60%, #f34a4a 60% 90%, #00bff3 10%);
         }
-    p {
-        font-family: "OpenSans";
-        font-size: 20px;
-        color: #404040;
-        max-width: 760px;
-        text-align: center;
-        position: relative;
-        line-height: 2;
-        margin: 0;
-    &:first-child {
+    h4 {
         font-family: "OpenSansB";
         font-size: 30px;
         color: #12283e;
         line-height: 1.2;
+        margin: 0 auto;
+    }    
+    p {
+        &:first-of-type{
+            font-family: "OpenSans";
+            font-size: 20px;
+            color: #404040;
+            max-width: 760px;
+            text-align: center;
+            position: relative;
+            line-height: 2;
+            margin: 0;
         }
-    &:last-child {
+        &:last-of-type {
             font-family: "OpenSansL";
             font-size: 14px;
             color: #797979;
             max-width: 490px;
             line-height: 1.4;
-            margin-top: 3px;
+            margin-top: 4px;
+            text-align: center;
         }
     }
 }    

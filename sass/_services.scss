@@ -7,9 +7,45 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 37px;
-    grid-template-rows: repeat(2, 230px) auto;
+    grid-template-rows: repeat(2, auto);
     justify-items: center;
     align-items: center;
+}
+.serv-icons-fitness {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.serv-image-fitness {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.serv-ellipse-fitness {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.serv-icons-diet {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.serv-image-diet {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.serv-ellipse-diet {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.serv-icons-habbits {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.serv-image-habbits {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.serv-ellipse-habbits {
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 %serv-h4-style {
     font-family: "OpenSansB";
@@ -28,28 +64,47 @@
     width: 276px;
     margin: 5px 0;
 }
-.serv-icons {
+.serv-image-fitness {
+    transform: skewX(6deg) skewY(-3deg) rotate(2deg);
+    object-fit: none;
+    img {
+        object-fit: none;
+    }
+}
+.serv-image-diet {
+    transform: skew(1deg, 2deg);
+}
+.serv-image-habbits {
+    transform: skew(-5deg, -2deg);
+}
+.serv-icons-fitness,
+.serv-icons-diet,
+.serv-icons-habbits {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
+    position: relative;
     h4 {
         @extend %serv-h4-style;
-       color: #12283e;
+        color: #12283e;
    } 
-   p {
-    @extend %serv-paragraph-style;
-    color: rgba(18, 40, 62, 0.68);
-    }   
-}
-.serv-focus {
-    h4 {
-        @extend %serv-h4-style;
-        color: #a0ce4e;
-    }    
     p {
         @extend %serv-paragraph-style;
-        color: #12283e;
+        color: rgba(18, 40, 62, 0.68);
+    }  
+    &:hover {
+        h4 {
+            color: #a0ce4e;
+        }
+        &::after {
+            content: '';
+            background-color: #000;
+            opacity: 0.1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
     } 
 }
 %services-image-decoration {
@@ -58,7 +113,9 @@
     width: 100%;
     height: 99%;
 }
-.serv-image {
+.serv-image-fitness,
+.serv-image-diet,
+.serv-image-habbits {
     position: relative;
     img {
         width: 350px;
@@ -66,39 +123,28 @@
         border-radius: 3px;
         box-sizing: border-box;
         object-position: top;
-    }  
+    }     
     .image-color {
         @extend %services-image-decoration;
         background-color: rgba(18, 40, 62, 0.49);
-        transform: skewX(6deg) skewY(-3deg) rotate(2deg);
     }  
     .image-color2 {
         @extend %services-image-decoration;
         background-color: rgba(18, 40, 62, 0.41);
-        transform: skew(1deg, 2deg);
     }
     .image-color3 {
         @extend %services-image-decoration;
         background-color: rgba(18, 40, 62, 0.41);
-        transform: skew(-5deg, -2deg);
     }
 }
-.serv-image-transfotm1 {
-    transform: skewX(6deg) skewY(-3deg) rotate(2deg);
-    object-fit: none;
-}
-.serv-image-transfotm2 {
-    transform: skew(1deg, 2deg);
-}
-.serv-image-transfotm3 {
-    transform: skew(-5deg, -2deg);
-}
-.serv-ellipse {
+.serv-ellipse-fitness,
+.serv-ellipse-diet,
+.serv-ellipse-habbits {
     text-align: center;
-        width: 20px;
-        height: 20px;
-        border: 3px solid #959595;
-        border-radius: 50%;  
+    width: 20px;
+    height: 20px;
+    border: 3px solid #959595;
+    border-radius: 50%;  
 }
 .service-description {
     p {
