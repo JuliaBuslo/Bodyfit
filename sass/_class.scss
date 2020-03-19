@@ -3,8 +3,8 @@ background-image: url(../media/class-bg.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: top;
-padding-top: 136px;
-padding-bottom: 80px;
+padding-top: 100px;
+padding-bottom: 92px;
 position: relative;
 }
 .wr-class .container {
@@ -34,7 +34,10 @@ position: relative;
         z-index: -1;
         background-color: #fff;
     }
-    p {
+    &:hover {
+        box-shadow: 0 0 30px #a0ce4e;
+    }
+    a {
         font-family: "OpenSansB";
         font-size: 20px;
         color: #0b3e6e;
@@ -44,17 +47,11 @@ position: relative;
         font-family: "OpenSans";
     }
 }
-.class-body-text2 {
-    background-color: #fff;
-    padding: 14px;
-    border-radius: 50%;
-    text-align: center;
-    box-sizing: border-box;
-}
 .women-classes {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 63px;
     h4, p {
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.51);
     }
@@ -63,22 +60,23 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 50px;
 }
-
 .women-classes,
 .men-classes {
     h4 {
         font-family: "OpenSansB";
         font-size: 30px;
         line-height: 1.6;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
     p {
         font-family: "OpenSans";
         font-size: 14px;
-        max-width: 364px;
+        max-width: 366px;
         line-height: 1.71;
-        margin-bottom: 50px;
+        margin-bottom: 41px;
+        white-space: pre-line;
     }
     a {
         display: flex;
@@ -88,6 +86,7 @@ position: relative;
         font-size: 14px; 
         width: 190px;
         height: 40px;
+        margin-left: 3px;
         box-sizing: border-box;
     }
 }
@@ -95,16 +94,35 @@ position: relative;
     a {
         line-height: 3.43;
         border: solid 0.5px #f5f5f5;
+        &:hover {
+            box-shadow: 0 0 20px #000;
+            background-color: #a0ce4e;
+        }
     }
 }
 .men-classes {
     h4, p, a {
         color: #0b3e6e;
     }
+    h4 {
+        margin-top: 30px;
+        margin-right: 275px;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-right: 77px;
+        margin-bottom: 57px;
+    }
     a {
         font-size: 18px;
         line-height: 2.67;
         border: solid 0.5px #0a3e6e;
+        margin-right: 252px;
+        box-sizing: border-box;
+        &:hover {
+            box-shadow: 0 0 20px #000;
+            background-color: #0a3e6e;
+            color: #fff;
+        }
     }
 }
-

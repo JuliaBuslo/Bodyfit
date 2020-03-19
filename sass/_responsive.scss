@@ -1,7 +1,7 @@
 .wr-responsive {
     background-color: #fff;
     padding-top: 181px;
-    padding-bottom: 198px;
+    padding-bottom: 197px;
     position: relative;
     .container {
         display: flex;
@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-right: 20px;
 }
 .responsive-text {
     display: flex;
@@ -27,8 +28,8 @@
         display: block;
         bottom: -45px;
         height: 5px;
-        width: 480px;
-        background-image: linear-gradient(to right, #a0ce4e 30%, #014f93 30% 60%, #f34a4a 60% 90%, #00bff3 10%);
+        width: 456px;
+        background-image: linear-gradient(to right, #a0ce4e 28%, #014f93 28% 57%, #f34a4a 57% 86%, #00bff3 14%);
         }
     h4 {
         font-family: "OpenSansB";
@@ -56,6 +57,7 @@
             line-height: 1.4;
             margin-top: 4px;
             text-align: center;
+            margin-bottom: 0;
         }
     }
 }    

@@ -1,0 +1,197 @@
+.footer-container {
+    background-color: #a0ce4e;
+    padding-top: 95px;
+    .container {
+        display: flex;
+        padding-top: 120px;
+        padding-bottom: 136px;
+        justify-content: space-between;
+    }
+    p, a {
+        font-family: "OpenSansL";
+        font-size: 14px;
+        line-height: 1.72;
+    }
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 85px;
+    a {
+        background-color: #1f4b6e;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+        margin: 0 18px;
+        text-decoration: none;
+        &:hover {
+                background-color: #3751d6;
+                box-shadow: 0 0 10px #fff;
+                &:nth-child(2) {
+                    background-color: #68ebe9;
+                }
+                &:nth-child(3) {
+                    background-color: #f14242;
+                }
+                &:nth-child(4) {
+                    background-color: #ed6444;
+                }
+            } 
+        }
+    }
+.footer-shape {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.footer-logo,
+.footer-contacts,
+.footer-newsletter {
+    width: 350px;
+}
+.footer-logo {
+    p {
+        font-family: "OpenSansL";
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.08px;
+        margin-top: 25px;
+        margin-bottom: 27px;
+    }
+}
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    h5, span {
+        display: inline;
+        font-family: "OpenSansB";
+        font-size: 14px;
+        color: #1f4b6e;
+    }
+    h5 {
+        margin: 5px 2px 0;
+    }
+    p {
+        margin: 0;
+        max-width: 318px;
+    }
+    a {
+    &:hover {
+        color: #0a3354;
+    }
+        &:nth-of-type(1) {
+        margin-top: 13px;
+        margin-left: 7px;
+        margin-bottom: 10px;
+        }
+        &:nth-of-type(2) {
+            margin-left: 2px;
+        }
+        &:nth-of-type(3) {
+            margin-top: 4px;
+            margin-left: 19px;
+            font-size: 18px;
+        }
+    }
+    span {
+        margin: 0 2px;
+    }
+}
+.footer-adress {
+    margin-top: 34px;
+    p {
+        max-width: 235px;
+        margin-left: 24px;
+    }
+}
+.footer-newsletter {
+    h4 {
+        font-family: "OpenSansB";
+        font-size: 20px;
+        color: #1f4b6e;
+        margin: 0 7px;
+    }
+    p {
+        max-width: 260px;
+        margin-top: 16px;
+        margin: 16px 7px 29px;
+    }
+}
+.main-form {
+    input {
+        width: 100%;
+        height: 43px;
+        border: 1.5px solid #fff;
+        color: #cded94;
+        background-color: transparent;
+        font-size: 14px;
+        padding-left: 20px;
+        cursor: pointer;
+        margin: 0 7px 7px;
+        box-sizing: border-box;
+        &:hover {
+            background-color: #e3f8bf;
+        }
+    }
+    input[type='text']::placeholder,
+    input[type='email']::placeholder {
+        color: #cded94;
+    }
+    button {
+        width: 121px;
+        height: 41px;
+        background-color: #1f4b6e;
+        border: none;
+        font-family: "OpenSansB";
+        font-size: 14px;
+        color: #fff;
+        margin: 9px 7px;
+        cursor: pointer;
+        box-sizing: border-box;
+        letter-spacing: 1.5px;
+        &:hover {
+            box-shadow: 0 0 20px #529bd4;
+            color: #a0ce4e;
+        }
+    }
+}
+footer {
+    background-color: #1f4b6e;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        p {
+            font-family: "OpenSansL";
+            font-size: 14px;
+            letter-spacing: 0.7px;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+        }
+        a {
+            font-size: 12px;
+            margin-left: 40px; 
+            &:hover {
+                color: #a0ce4e;
+                text-shadow: 0 0 15px #a0ce4e;
+            }
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    footer {
+        .container {
+        ul {
+            display: none;
+        }
+    }
+    }
+}
