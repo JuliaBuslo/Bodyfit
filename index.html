@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./css/main.css">
  
 </head>
@@ -18,7 +19,7 @@
   <section class="header-container">
     <header class="header">
       <div class="container">
-            <a class="logo" href="#">
+            <a class="logo" href="#home">
             <img src="./media/Logotype.png" alt="logotype image">
             </a>
           <div class="menu-container">
@@ -65,7 +66,7 @@
         <div class="wr-title-text" id="home">
           <h1>WELCOME TO BODY<span class="logo-decoration">FIT</span></h1>
           <p>Working from home meant we could vary snack and coffee breaks, change our desks or view, drink on the job, even spend the day in pajamas,<br> and often meet to gossip or share ideas.</p>
-          <a href="#">LEARN MORE</a>
+          <a href="#class">LEARN MORE</a>
       </div>
           <ul class="navigation-slides">
             <li></li>
@@ -97,13 +98,13 @@
   <div class="fearure-title-text">
     <h3>Optimized Your Body </h3>
     <p>Start Your Trainig Today </p>
-    <a href="#">START NOW</a>
+    <a href="#portfolio">START NOW</a>
   </div>
 </div>
 </div>
 </section>
 <!-- services section -->
-  <section class="wr-services">
+  <section class="wr-services" id="portfolio">
     <div class="container">
       <div class="services-content">
           <div class="serv-icons-fitness">
@@ -150,7 +151,7 @@
     </div>
   </section>
 <!-- daily shedule section -->
-<section class="wr-shedule">
+<section class="wr-shedule" id="reviews">
   <div class="container">
     <div class="shedule-slider">
       <div class="slide slide-border-green">
@@ -185,7 +186,7 @@
   </div>
 </section>
 <!-- responsive section -->
-<section class="wr-responsive" id="shop">
+<section class="wr-responsive">
   <div class="container">
     <div class="digital">
     <img src="./media/digital-display.png" alt="picture of Macbook and iphone">
@@ -200,10 +201,10 @@
   </div>
 </section>
 <!-- class section -->
-<section class="wr-class">
+<section class="wr-class" id="class">
   <div class="container">
   <div class="class-body-text">
-    <a href="#">OUR
+    <a href="#home">OUR
       <span>CLASSES</span></a>
   </div>
   <div class="women-classes">
@@ -212,7 +213,7 @@
   Suspendisse pulvinar, velit nec pharetra interdum, 
   ante tellus ornare mi, et mollis 
   tellus neque vitae elit</p>
-<a href="#">START NOW</a>
+<a href="#home">START NOW</a>
   </div>
   <div class="men-classes">
     <h4>MEN CLASS</h4>
@@ -220,82 +221,119 @@
       Suspendisse pulvinar, velit nec pharetra interdum, 
       ante tellus ornare mi, et mollis 
       tellus neque vitae elit</p>
-    <a href="#">START NOW</a>
+    <a href="#home">START NOW</a>
   </div>
 </div>
 </section>
 <!-- shop and statistics section -->
-<section class="wr-statistics">
+<section class="wr-statistics" id="shop">
 <div class="container">
   <div class="showcase-slider">
     <div class="showcase">
+      <div class="showcase-image">
         <img src="./media/shopAndStatistics-first.jpg" alt="picture of sport equipment">
-        <a href="#" class="stat-hidden-text">
+        <a data-fancybox="gallery" href="./media/shopAndStatistics-first.jpg" class="stat-hidden-text">
           QUICK VIEW
         </a>
+      </div>
       <p>Roger Black Gold Magnetic Exercise
         Bike.</p>
-      <a href="#">VIEW MORE</a>
+      <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-second.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-second.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+      </div>
       <p>Davina 12kg Dumbbell Tree.</p>
-      <a href="#">VIEW MORE</a>
+      <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-third.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-third.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+    </div>
       <p>Men's Health Dial Dumbbell - 
         25kg.</p>
-      <a href="#">VIEW MORE</a>
+        <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-fourth.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-fourth.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+    </div>
       <p>Pro Fitness Dual Hydraulic 
         Rowing Machine.</p>
-      <a href="#">VIEW MORE</a>
+        <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-fifth.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-fifth.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+    </div>
       <p>Pro Fitness Cast Dumbbell 
         Set - 20kg.</p>
-      <a href="#">VIEW MORE</a>
+        <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-sixth.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-sixth.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+    </div>
       <p>New Sneakers Sport Shoes
         For Men Women.</p>
-      <a href="#">VIEW MORE</a>
+        <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-seventh.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-seventh.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+    </div>
       <p>Men's Health Kettlebell - 
         20kg.</p>
-      <a href="#">VIEW MORE</a>
+        <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
     <div class="showcase">
+      <div class="showcase-image">
       <img src="./media/shopAndStatistics-eighth.jpg" alt="picture of sport equipment">
+      <a data-fancybox="gallery" href="./media/shopAndStatistics-eighth.jpg" class="stat-hidden-text">
+        QUICK VIEW
+      </a>
+    </div>
       <p>Men's Health Suspension 
         Trainer.</p>
-      <a href="#">VIEW MORE</a>
+        <a class="stat-more-info" href="#home">VIEW MORE</a>
     </div>
   </div>
   <div class="statistics">
-    <a href="#" class="stat-sec">
+    <a href="#home" class="stat-sec">
      <i class="fas fa-th"></i>
       <p>93
         CLASSES</p>
       </a>
-    <a href="#" class="stat-sec">
+    <a href="#home" class="stat-sec">
       <i class="fas fa-trophy"></i>
       <p>22
         AWARDS</p>
       </a>
-    <a href="#" class="stat-sec">
+    <a href="#home" class="stat-sec">
       <i class="fas fa-users"></i>
       <p>15
         TRAINERS</p>
       </a>
-    <a href="#" class="stat-sec">
+    <a href="#home" class="stat-sec">
       <i class="fas fa-user"></i>
       <p>65
         MEMBERS</p>
@@ -305,7 +343,7 @@
 
 </section>
 <!-- twetts section -->
-<section class="wr-twetts">
+<section class="wr-twetts" id="blog">
   <ul class="twetts-slides">
     <li></li>
     <li></li>
@@ -314,23 +352,23 @@
   <h3>LATEST TWEETS</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <a href="#">FOLLOW US</a>
+  <a href="#contact">FOLLOW US</a>
 </div>
 </section>
 <!-- footer section -->
 <section class="footer-container">
   <div class="social-icons">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-    <a href="#"><i class="fab fa-vk"></i></a>
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-vine"></i></a>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+    <a href="https://aboutme.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+    <a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://vine.co/" target="_blank"><i class="fab fa-vine"></i></a>
   </div>
 <div class="footer-shape"></div>
-<div class="container">
+<div class="container" id="contact">
   <div class="footer-logo">
     <img src="./media/logo-footer.png" alt="picture of logo">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
@@ -362,7 +400,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur
       adipisicing elit, sed do eiusmod tempor
       incididunt ut labore et dolore.</p>
-    <form class="main-form" action="" method="POST">
+    <form class="main-form" action="https://formspree.io/xeqzlwez" method="POST">
       <input type="text" placeholder="Name (requird)" name="name">
       <input type="email" placeholder="E-mail (requird)" name="email"> 
       <button type="submit">SEND</button>
@@ -377,15 +415,16 @@
       <li><a href="#home">HOME</a></li>
       <li><a href="#features">FEATURES</a></li>
       <li><a href="#portfolio">PORTFOLIO</a></li>
-      <li><a href="reviews">REVIEWS</a></li>
-      <li><a href="shop">SHOP</a></li>
-      <li><a href="blog">BLOG</a></li>
-      <li><a href="contact">CONTACT</a></li>
+      <li><a href="#reviews">REVIEWS</a></li>
+      <li><a href="#shop">SHOP</a></li>
+      <li><a href="#blog">BLOG</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
 </footer>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./fancybox/jquery.fancybox.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

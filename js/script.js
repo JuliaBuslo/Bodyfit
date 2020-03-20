@@ -12,6 +12,15 @@ if(header) {
   }
 }
 
+// scroll menu
+$('a[href*="#"]').on('click', function (e) {
+  e.preventDefault();
+ 
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top - 55
+  }, 900, 'linear');
+});
+
 // mobile menu 
 let menuMobileBtn = document.querySelector('.menu-mobile-btn');
 let menuLines = document.querySelector('.line-menu');
