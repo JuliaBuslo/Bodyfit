@@ -4,7 +4,7 @@
     .container {
         display: flex;
         padding-top: 120px;
-        padding-bottom: 136px;
+        padding-bottom: 129px;
         justify-content: space-between;
     }
     p, a {
@@ -68,7 +68,6 @@
     display: flex;
     flex-direction: column;
     h5, span {
-        display: inline;
         font-family: "OpenSansB";
         font-size: 14px;
         color: #1f4b6e;
@@ -80,33 +79,39 @@
         margin: 0;
         max-width: 318px;
     }
+    ul {
+        margin: 12px 0 0;
+    }
+    li {
+        margin-bottom: 9px;
+    }
     a {
+        position: relative;
+        i {
+            position: absolute;
+            top: 4px;
+            left: 3px;
+        }
     &:hover {
         color: #0a3354;
     }
-        &:nth-of-type(1) {
-        margin-top: 13px;
-        margin-left: 7px;
-        margin-bottom: 10px;
-        }
-        &:nth-of-type(2) {
-            margin-left: 2px;
-        }
-        &:nth-of-type(3) {
-            margin-top: 4px;
-            margin-left: 19px;
-            font-size: 18px;
-        }
     }
     span {
-        margin: 0 2px;
+        padding-left: 22px;
+        padding-right: 3px;
     }
 }
 .footer-adress {
+    position: relative;
     margin-top: 34px;
+    padding-left: 21px;
     p {
         max-width: 235px;
-        margin-left: 24px;
+    }
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
 .footer-newsletter {
@@ -174,7 +179,6 @@ footer {
         }
         ul {
             display: flex;
-            flex-direction: row;
         }
         a {
             font-size: 12px;
@@ -189,9 +193,50 @@ footer {
 @media screen and (max-width: 950px) {
     footer {
         .container {
-        ul {
-            display: none;
+            align-items: center;
+            justify-content: center;
+            ul {
+                display: none;
+            }
         }
     }
+}
+@media screen and (max-width: 550px) {
+    .social-icons {
+        a {
+            margin: 0 5px;
+        }
+    }
+    .footer-container {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+        }
+    }
+    .footer-logo {
+        p {
+            display: none;
+        }
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .footer-logo,
+    .footer-contacts,
+    .footer-newsletter {
+        width: auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer-container {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .social-icons {
+        a {
+            margin: 0 1px;
+        }
     }
 }

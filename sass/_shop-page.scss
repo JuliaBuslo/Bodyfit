@@ -1,0 +1,125 @@
+// shop page
+.header-page {
+    background-color: #1f4b6e; 
+}
+.navbar {
+    height: 93px;
+        img {
+            width: 150px;
+            height: 50px;
+    }
+    .navbar-text {
+        font-family: "Renfrew";
+        font-size: 30px;
+        color: #a0ce4e;
+    }
+}
+.carousel-item {
+    img {
+        max-height: 312px;
+    }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+.slider-page {
+   margin-bottom: 25px;
+}
+.grid-posts {
+    margin: 100px 0; 
+    .card {
+        border: none;
+        margin-bottom: 50px;
+    }
+}
+.card-img-top {
+    max-height: 312px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.post-title {
+    font-family: "OpenSansB";
+    font-size: 24px;
+    color: #a0ce4e;
+    text-align: center;
+}
+.card-text {
+    color: #1f4b6e;
+    text-shadow: 0 0 15px #a0ce4e;
+    font-family: "OpenSansL";
+    font-size: 20px;
+}
+.footer-page {
+    background-color: #a0ce4e;
+    padding: 10px 0;
+    color: #1f4b6e;
+    font-family: "OpenSansB"; 
+}
+.footer-page {
+    .container {
+        display: block;
+    }
+}
+.signup {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    h3 {
+        font-family: "Renfrew";
+        color: #1f4b6e;
+        text-transform: uppercase;
+    }
+    form {
+        margin-top: 50px;
+    }
+    .form-submit {
+        position: relative;
+    }
+    .form-control {
+        border: none;
+        border-bottom: 1.5px solid #000;
+        border-radius: 0;
+        background-color: transparent;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+.form-group {
+    label {
+        font-family: "OpenSansL";
+        color: #a0ce4e;
+    }
+    input {
+        &:hover {
+            background-color: #e3f8bf;
+        }
+    }
+}
+.form-submit {
+    .btn {
+        position: absolute;
+        right: 6px;
+        top: 20px;
+        font-size: 30px;
+        padding: 0;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+    &::placeholder {
+    color: #cded94;
+    }
+}
+@media all and (max-width:700px) {
+    .navbar {
+        form {
+            display: none;
+        }
+    }
+}

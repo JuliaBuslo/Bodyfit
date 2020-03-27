@@ -60,7 +60,7 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 .women-classes,
 .men-classes {
@@ -123,6 +123,42 @@ position: relative;
             box-shadow: 0 0 20px #000;
             background-color: #0a3e6e;
             color: #fff;
+        }
+    }
+}
+@media all and (max-width:1050px) {
+    .men-classes {
+        h4 {
+            margin-right: 200px;
+            margin-top: 70px;
+        }
+        a {
+            margin-right: 177px;
+        }
+        p {
+            margin-right: 0;
+        }
+    }
+}
+@media all and (max-width:550px) {
+    .wr-class {
+        background-image: url(../media/mobile-bg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .women-classes {
+        align-items: center;
+        margin: 0; 
+        h4 {
+            margin: 0;
+        }
+    }
+    .men-classes {
+        align-items: center;
+        margin: 0; 
+        padding-top: 150px;
+        h4, a {
+            margin: 0;
         }
     }
 }

@@ -61,3 +61,23 @@
         }
     }
 }    
+@media all and (max-width:650px) {
+    .digital {
+        margin-right: 0;
+        img {
+            width: 450px;
+        }
+    }
+}
+@media all and (max-width:500px) {
+    .responsive-text {
+        &::after  {
+            width: 300px;
+        }
+    }
+    .digital {
+        img {
+            width: 300px;
+        }
+    }
+}

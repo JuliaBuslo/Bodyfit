@@ -86,3 +86,106 @@
         }
     }
 }
+@media all and (max-width:1050px) {
+    .features-workout-images img {
+        width: 220px;
+    }
+    .fearure-title-text {
+        a {
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 26px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .workout-title {
+        &:hover {
+            &::after {
+                right: 53px;
+            }
+        }    
+    }    
+}
+@media all and (max-width:800px) {
+    .features-workout-images {
+        .workout-title {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+@media all and (max-width:650px) {
+    .features-workout-images {
+        .workout-title {
+            &:nth-child(2) {
+                display: none;
+            }
+            &:hover {
+                &::after {
+                    right: 21px;
+                    left: 65px;
+                }
+                &::before {
+                    font-size: 11px;
+                    left: 75px;
+                }
+            }      
+        }
+        img {
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        }
+    }
+   .fearure-title-text {
+        margin-right: 0;
+   }
+}
+@media all and (max-width:450px) {
+    .features-workout-images {
+        .workout-title {
+            img {
+                height: auto;
+                width: 160px;
+            }
+            &:hover {
+                &::after {
+                    right: 11px;
+                    left: 54px;
+                }
+                &::before {
+                    font-size: 10px;
+                    left: 66px;
+                    height: 58px;
+                }
+            }
+        }
+    }
+    .fearure-title-text {
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        a {
+            width: 150px;
+        }
+    }
+}
+@media all and (max-width:350px) {
+    .fearure-title-text {
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 14px;
+        }
+        a {
+            width: 115px;
+        }
+    }
+}

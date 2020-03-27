@@ -2,7 +2,7 @@
     height: 100vh;
 }
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -196,8 +196,8 @@ nav {
     }
     a {
         &:hover {
-            color: #a0ce4e;
-            text-shadow: 0 0 15px #a0ce4e;
+            color: #1f4b6e;
+            text-shadow: 0 0 5px #1f4b6e;
         }
     }
 }
@@ -224,7 +224,7 @@ nav {
     align-items: flex-start;
     max-width: 1110px;
     margin: 0 auto;
-    padding-top: 235px;
+    padding-top: 142px;
     padding-left: 196px;
     p {
         font-size: 14px;
@@ -253,6 +253,67 @@ nav {
         box-sizing: border-box; 
         &:hover {
             box-shadow: 0 0 25px #a0ce4e;
+        }
+    }
+}
+@media all and (max-width:1200px) {
+    .wr-title-text {
+        padding-left: 110px;
+    }
+}
+@media all and (max-width: 950px) {
+    .menu-container {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .logo {
+        position: absolute;
+        top: 14px;
+    }
+    h1 {
+        max-width: 350px;
+    }
+    .wr-title-text {
+        p {
+            max-width: 430px;
+        }
+    }
+}
+@media all and (max-width: 650px) {
+    .wr-title-text {
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+        h1, p {
+            text-align: center;
+        }
+    }
+}
+@media all and (max-width: 320px) {
+    .wr-title-text {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media all and (max-height: 580px) {
+    .wr-title-text {
+        padding-top: 0;
+    }
+}
+@media all and (max-height: 410px) {
+    .wr-title-text {
+        h1 {
+            font-size: 24px;
+        }
+    }
+}
+@media all and (max-height: 320px) and (max-width:950px) {
+    .wr-title-text {
+        p {
+            margin-bottom: 15px;
         }
     }
 }

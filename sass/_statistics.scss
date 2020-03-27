@@ -4,11 +4,11 @@
     padding-bottom: 195px;
 }
 .showcase {
-    height: 460px;
     background-color: #fff;
     box-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.16);
     border: 1px solid #e2e2e2;
     position: relative;
+    padding-bottom: 46px;
     button {
         border: 1px solid #fff;
         background-color: transparent;
@@ -24,6 +24,7 @@
         margin-left: 23px;
         max-width: 225px;
         height: 50px;
+        overflow: hidden;
     }
     .stat-more-info {
         font-family: "OpenSansB";
@@ -43,6 +44,7 @@
         &:hover {
             background-color: #637180;
             opacity: .66;
+            box-shadow: 0 0 15px #12283e;
         }
     }
     img {
@@ -100,6 +102,23 @@
         }
     }
 }
+.view-shop {
+    font-family: "OpenSansB";
+    font-size: 26px;
+    background-color: #1f4b6e;
+    width: 272px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-transform: uppercase; 
+        &:hover {
+            background-color: #737373;
+            box-shadow: 0 0 20px #12283e;
+    }
+}
 .statistics {
     display: flex;
     justify-content: space-between;
@@ -116,7 +135,9 @@
         background-color: #a0ce4e;
         border: 5px solid #fff;
         box-sizing: border-box;
+        padding-top: 15px;
         box-shadow: 1.6px 2.6px 5px 0 rgba(0, 0, 0, 0.14);
+        transition-duration: 1s;
         p {
             max-width: 86px;
             text-align: center;
@@ -124,7 +145,6 @@
             font-size: 20px;
         }
         i {
-            padding-top: 15px;
             font-size: 35px;
         }
         &:hover {
@@ -133,6 +153,54 @@
             border-top-left-radius: 27px 27px;
             border-top-width: 10px;
             border-left-width: 10px;
+            border-bottom-right-radius: 27px 27px;
+            border-bottom-width: 10px;
+            border-right-width: 10px;
+        }
+    }
+}
+@media all and (max-width:1200px) {
+    .showcase-slider {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+@media all and (max-width:800px) {
+    .statistics {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 50px;
+        justify-content: center;
+        a {
+            justify-self: center;
+        }
+    }
+}
+@media all and (max-width:550px) {
+    .showcase-slider {
+        max-width: 80%;
+    }
+    .statistics {
+        gap: 15px;
+        a {
+            width: 150px;
+            height: 150px;
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media all and (max-width:320px) {
+    .statistics {
+        gap: 10px;
+        a {
+            width: 135px;
+            height: 135px;
+        }
+        p {
+            font-size: 12px;
         }
     }
 }
