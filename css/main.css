@@ -2193,5 +2193,112 @@ input[type=tel]::placeholder {
     display: none;
   }
 }
+.header-grid {
+  background-color: #1f4b6e;
+}
+.header-grid .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 93px;
+}
+.header-grid .container h3 {
+  color: #a0ce4e;
+  font-family: "Renfrew";
+  font-size: 30px;
+}
+
+.shop-page-grid {
+  background-color: #f0f0f0;
+}
+.shop-page-grid .container {
+  padding: 20px 0;
+  width: 100%;
+}
+.shop-page-grid .container p {
+  font-family: "OpenSansL";
+  font-size: 18px;
+  color: #1f4b6e;
+  text-align: justify;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.gallery-picture {
+  background-color: #a0ce4e;
+}
+.gallery-picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.gallery-picture a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.shop-page-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 315px);
+  gap: 5px;
+  grid-template-areas: "p8 p8 p8" "p1 p2 p2" "p3 p2 p2" "p4 p4 p5" "p4 p4 p7" "p6 p6 p6";
+}
+.shop-page-gallery .picture1 {
+  grid-area: p1;
+}
+.shop-page-gallery .picture2 {
+  grid-area: p2;
+}
+.shop-page-gallery .picture3 {
+  grid-area: p3;
+}
+.shop-page-gallery .picture4 {
+  grid-area: p4;
+}
+.shop-page-gallery .picture5 {
+  grid-area: p5;
+}
+.shop-page-gallery .picture6 {
+  grid-area: p6;
+}
+.shop-page-gallery .picture7 {
+  grid-area: p7;
+}
+.shop-page-gallery .picture8 {
+  grid-area: p8;
+}
+
+.footer-grid {
+  background-color: #a0ce4e;
+}
+.footer-grid p {
+  margin: 0;
+}
+
+@media all and (max-width: 950px) {
+  .footer-grid .container {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 700px) {
+  .shop-page-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 315px);
+    grid-template-areas: "p8 p8" "p1 p3" "p2 p2" "p2 p2" "p5 p7" "p4 p4" "p4 p4" "p6 p6";
+  }
+}
+@media all and (max-width: 500px) {
+  .shop-page-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 315px);
+    grid-template-areas: "p8" "p1" "p2" "p3" "p4" "p5" "p6" "p7";
+  }
+}
+@media all and (max-width: 400px) {
+  .header-grid .container h3 {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
