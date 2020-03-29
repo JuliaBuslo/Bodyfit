@@ -15,13 +15,18 @@ position: relative;
     height: 123px;
     color: #000;
     position: absolute;
+    display: -webkit-inline-box;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     border-radius: 50%;
     top: 50%;
-    transform: translate(-50px, -50px);
+    -webkit-transform: translate(-50px, -50px);
+            transform: translate(-50px, -50px);
     left: 50%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#afc6cc), to(#06335c));
     background-image: linear-gradient(to top, #afc6cc, #06335c);
     &::before {
         content: "";
@@ -48,18 +53,26 @@ position: relative;
     }
 }
 .women-classes {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
     margin-left: 63px;
     h4, p {
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.51);
     }
 }
 .men-classes {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: end;
+            align-items: flex-end;
     padding-top: 50px;
 }
 .women-classes,
@@ -79,9 +92,12 @@ position: relative;
         white-space: pre-line;
     }
     a {
+        display: -webkit-box;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
         font-family: "OpenSansB";
         font-size: 14px; 
         width: 190px;
@@ -147,14 +163,16 @@ position: relative;
         background-repeat: no-repeat;
     }
     .women-classes {
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
         margin: 0; 
         h4 {
             margin: 0;
         }
     }
     .men-classes {
-        align-items: center;
+        -webkit-box-align: center;
+                align-items: center;
         margin: 0; 
         padding-top: 150px;
         h4, a {

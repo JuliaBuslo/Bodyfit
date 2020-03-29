@@ -2,10 +2,12 @@
     background-color: #a0ce4e;
     padding-top: 95px;
     .container {
+        display: -webkit-box;
         display: flex;
         padding-top: 120px;
         padding-bottom: 129px;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
     }
     p, a {
         font-family: "OpenSansL";
@@ -14,17 +16,23 @@
     }
 }
 .social-icons {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     padding-bottom: 85px;
     a {
         background-color: #1f4b6e;
         width: 34px;
         height: 34px;
+        display: -webkit-box;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
         border-radius: 50%;
         color: #fff;
         margin: 0 18px;
@@ -65,8 +73,11 @@
     }
 }
 .footer-contacts {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     h5, span {
         font-family: "OpenSansB";
         font-size: 14px;
@@ -143,6 +154,18 @@
             background-color: #e3f8bf;
         }
     }
+    input[type='text']::-webkit-input-placeholder, input[type='email']::-webkit-input-placeholder {
+        color: #cded94;
+    }
+    input[type='text']::-moz-placeholder, input[type='email']::-moz-placeholder {
+        color: #cded94;
+    }
+    input[type='text']:-ms-input-placeholder, input[type='email']:-ms-input-placeholder {
+        color: #cded94;
+    }
+    input[type='text']::-ms-input-placeholder, input[type='email']::-ms-input-placeholder {
+        color: #cded94;
+    }
     input[type='text']::placeholder,
     input[type='email']::placeholder {
         color: #cded94;
@@ -168,9 +191,12 @@
 footer {
     background-color: #1f4b6e;
     .container {
+        display: -webkit-box;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
         padding: 10px 0;
         p {
             font-family: "OpenSansL";
@@ -178,6 +204,7 @@ footer {
             letter-spacing: 0.7px;
         }
         ul {
+            display: -webkit-box;
             display: flex;
         }
         a {
@@ -193,8 +220,10 @@ footer {
 @media screen and (max-width: 950px) {
     footer {
         .container {
-            align-items: center;
-            justify-content: center;
+            -webkit-box-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                    justify-content: center;
             ul {
                 display: none;
             }
@@ -230,8 +259,11 @@ footer {
 @media screen and (max-width: 400px) {
     .footer-container {
         .container {
+            display: -webkit-box;
             display: flex;
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                    flex-direction: column;
         }
     }
     .social-icons {

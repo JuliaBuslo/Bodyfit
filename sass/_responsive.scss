@@ -4,23 +4,35 @@
     padding-bottom: 197px;
     position: relative;
     .container {
+        display: -webkit-box;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
         position: relative;
     }
 }
 .digital {
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     position: relative;
     margin-right: 20px;
 }
 .responsive-text {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     margin-top: 21px;
     &::after {
         content: '';
@@ -29,6 +41,7 @@
         bottom: -45px;
         height: 5px;
         width: 456px;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(28%, #a0ce4e), color-stop(28%, #014f93), color-stop(57%, #f34a4a), color-stop(14%, #00bff3));
         background-image: linear-gradient(to right, #a0ce4e 28%, #014f93 28% 57%, #f34a4a 57% 86%, #00bff3 14%);
         }
     h4 {

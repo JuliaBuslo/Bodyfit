@@ -9,7 +9,8 @@
     row-gap: 37px;
     grid-template-rows: repeat(3, auto);
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 .serv-icons-fitness {
     grid-column: 1/2;
@@ -65,25 +66,35 @@
     margin: 5px 0;
 }
 .serv-image-fitness {
-    transform: skewX(6deg) skewY(-3deg) rotate(2deg);
-    object-fit: none;
+    -webkit-transform: skewX(6deg) skewY(-3deg) rotate(2deg);
+            transform: skewX(6deg) skewY(-3deg) rotate(2deg);
+    -o-object-fit: none;
+       object-fit: none;
     img {
-        object-fit: none;
+        -o-object-fit: none;
+           object-fit: none;
     }
 }
 .serv-image-diet {
-    transform: skew(1deg, 2deg);
+    -webkit-transform: skew(1deg, 2deg);
+            transform: skew(1deg, 2deg);
 }
 .serv-image-habbits {
-    transform: skew(-5deg, -2deg);
+    -webkit-transform: skew(-5deg, -2deg);
+            transform: skew(-5deg, -2deg);
 }
 .serv-icons-fitness,
 .serv-icons-diet,
 .serv-icons-habbits {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;  
     position: relative;
     h4 {
         @extend %serv-h4-style;
@@ -122,7 +133,8 @@
         height: 230px;
         border-radius: 3px;
         box-sizing: border-box;
-        object-position: top;
+        -o-object-position: top;
+           object-position: top;
     }     
     .image-color {
         @extend %services-image-decoration;

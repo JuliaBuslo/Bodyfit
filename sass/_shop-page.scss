@@ -112,6 +112,18 @@
 input[type='text'],
 input[type='email'],
 input[type='tel'] {
+    &::-webkit-input-placeholder {
+    color: #cded94;
+    }
+    &::-moz-placeholder {
+    color: #cded94;
+    }
+    &:-ms-input-placeholder {
+    color: #cded94;
+    }
+    &::-ms-input-placeholder {
+    color: #cded94;
+    }
     &::placeholder {
     color: #cded94;
     }

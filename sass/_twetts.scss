@@ -2,10 +2,15 @@
     height:345px;
    .container {
         text-align: center;
+        display: -webkit-box;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center;
         padding-top: 42px;
         h3 {
            font-family: "OpenSansB";
@@ -28,9 +33,12 @@
           width: 165px;
           height: 48px;
           background-color: #a0ce4e;
+          display: -webkit-box;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          -webkit-box-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+                  align-items: center;
           &:hover {
               background-color: #959595;
           }
@@ -50,7 +58,8 @@
         height:345px;
         background-repeat: no-repeat;
         opacity: 0;
-        animation: twetts_slides 8.0s linear infinite 0s;
+        -webkit-animation: twetts_slides 8.0s linear infinite 0s;
+                animation: twetts_slides 8.0s linear infinite 0s;
     }
 }
 .twetts-slides {
@@ -62,11 +71,19 @@
         }
         &:nth-child(2) {
             background-image: url(../media/follow-second.jpg);
-            animation-delay: 4.0s;
+            -webkit-animation-delay: 4.0s;
+                    animation-delay: 4.0s;
             background-position: center;
             background-size: cover;
         }
     }
+}
+@-webkit-keyframes twetts_slides {
+    0% {opacity:0;}
+    25% {opacity:1;}
+    50% {opacity:1;}
+    75% {opacity:0;}
+    100% {opacity:0;}
 }
 @keyframes twetts_slides {
     0% {opacity:0;}
@@ -88,6 +105,7 @@
     img {
         width: 100%;
         max-height: 345px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 }
